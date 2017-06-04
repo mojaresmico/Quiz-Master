@@ -5,6 +5,7 @@ Rails.application.routes.draw do
  
  resources :quiz
  get 'take-quiz' => 'quiz#index'
+ post 'submit-quiz' => 'quiz#record_quiz'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

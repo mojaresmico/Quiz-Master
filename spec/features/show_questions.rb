@@ -6,7 +6,7 @@ RSpec.describe "show questions" do
         @question = Question.create(content: "What is the meaning of LTE?", answer: "Long Term Evolution")
     end 
     it "show profile id" do
-        visit root_path
+        visit "add-questions"
         click_link "Show", match: :first
         expect(current_path).to eq("/questions/#{@question.id}")
         expect(page).to have_text("#{@question.content}")

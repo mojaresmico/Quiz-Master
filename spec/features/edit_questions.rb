@@ -15,7 +15,7 @@ RSpec.describe "EDIT QUESTIONS" do
     end 
 
     def visit_root_path
-        visit root_path
+        visit "add-questions"
     end 
     def  click_edit_link
          click_link "Edit"
