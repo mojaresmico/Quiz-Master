@@ -39,6 +39,6 @@ production:
   database: quizmaster
   pool: 10
   timeout: 5000
-  username: postgres
-  password: paramountdev
+  username: micomojares
+  password: 
   host: localhost
