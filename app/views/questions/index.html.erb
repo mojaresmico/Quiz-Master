@@ -1,8 +1,9 @@
+<div class ="col-md-10 col-md-offset-1">
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Questions</h1>
-
-<table>
+<h1>List of Questions</h1>
+<div class ="col-md-10 offset-2">
+<table class = "table">
   <thead>
     <tr>
       <th>Content</th>
@@ -23,7 +24,8 @@
     <% end %>
   </tbody>
 </table>
-
+<div>
 <br>
 
-<%= link_to 'New Question', new_question_path %>
+<%= link_to 'New Question', new_question_path %> <br> <%=link_to 'Home', '/'%>
+</div>

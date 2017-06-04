@@ -5,8 +5,14 @@ class QuestionsController < ApplicationController
   # GET /questions.json
   def index
     @questions = Question.all
+    
   end
-
+  def question_manager
+    
+    respond_to do |format|
+      format.html { render action: 'question_manager' }
+    end
+  end 
   # GET /questions/1
   # GET /questions/1.json
   def show

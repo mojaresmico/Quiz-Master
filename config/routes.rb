@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   resources :questions
- root 'questions#index'
+ root 'questions#question_manager'
+ get 'add-questions' => 'questions#index'
+ 
+ resources :quiz
+ get 'take-quiz' => 'quiz#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
