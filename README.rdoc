@@ -6,20 +6,31 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
-
+  ruby  'ruby 2.3.1p112'
+  rails  '4.2.8'
+  
 * System dependencies
 
 * Configuration
 
-* Database creation
+* Database creation = 
+  rake db:migrate DB: POSTGRESQL Kindly see DATABASE.yml for more details
+  tables:
+    -answers
+    -questions
 
 * Database initialization
 
 * How to run the test suite
+  rspec spec/features/(some files)
 
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
+
+  bundle install
+  rake db:migrate
+  rails s
 
 * ...
 
